@@ -11,6 +11,8 @@ body {
     --lightblue: #0084fd;
     --white: #ffffff;
     --grey: #333333;
+    --purple: #9792e4;
+    --bluecard: #b5ddff;
 }
 .debug {
     border: 1px solid black;
@@ -23,7 +25,7 @@ body {
 header {   
     background-color: var(--lightblue);
     color: var(--white);
-    padding: 0.7rem;
+    padding: 1rem 2rem; 
 }
 footer {
     background-color: var(--grey);
@@ -44,4 +46,13 @@ footer {
     display: none;
 }
 
+/* MAIN  */
 
+#planning, #benefits, #get-started {
+    background-color: var(--purple);
+}
+
+.card{
+    background-color: var(--bluecard);
+    margin: 0.7rem 1rem;
+}
