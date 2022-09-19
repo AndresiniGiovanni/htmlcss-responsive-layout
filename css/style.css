@@ -3,11 +3,45 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'PT Sans', sans-serif;
+    background-color: var(w);
+}
+:root {
+    --lightblue: #0084fd;
+    --white: #ffffff;
+    --grey: #333333;
+}
+.debug {
+    border: 1px solid black;
+    min-height: 50px;
+}
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+header {   
+    background-color: var(--lightblue);
+    color: var(--white);
+    padding: 0.7rem;
+}
+footer {
+    background-color: var(--grey);
 }
 
-.debud {
-    border: 1px solid black;
+/* HEADER  */
+.flex {
+    display: flex;
 }
+.just-between {
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+.nav-menu {
+    display: none;
+}
+
+
