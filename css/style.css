@@ -1,58 +1,122 @@
-*{ 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    font-family: 'PT Sans', sans-serif;
-    background-color: var(w);
+  font-family: "PT Sans", sans-serif;
+  background-color: var(w);
 }
 :root {
-    --lightblue: #0084fd;
-    --white: #ffffff;
-    --grey: #333333;
-    --purple: #9792e4;
-    --bluecard: #b5ddff;
+  --lightblue: #0084fd;
+  --blue: #0084fd;
+  --blueh3: #1e93fd;
+  --white: #ffffff;
+  --grey: #333333;
+  --purple: #9792e4;
+  --bluecard: #b5ddff;
 }
 .debug {
-    border: 1px solid black;
-    min-height: 50px;
+  border: 1px solid black;
+  min-height: 50px;
 }
-.container{
-    max-width: 600px;
-    margin: 0 auto;
+.container {
+  max-width: 600px;
+  margin: 0 auto;
 }
-header {   
-    background-color: var(--lightblue);
-    color: var(--white);
-    padding: 1rem 2rem; 
+header {
+  background-color: var(--lightblue);
+  color: var(--white);
+  padding: 1rem 2rem;
 }
 footer {
-    background-color: var(--grey);
+  background-color: var(--grey);
 }
 
 /* HEADER  */
+
+/* FLEX  */
 .flex {
-    display: flex;
+  display: flex;
 }
 .just-between {
-    justify-content: space-between;
+  justify-content: space-between;
 }
-
-.align-center{
-    align-items: center;
+.just-center {
+  justify-content: center;
+}
+.align-center {
+  align-items: center;
+}
+.flex-column{
+    flex-direction: column;
 }
 .nav-menu {
-    display: none;
+  display: none;
 }
 
 /* MAIN  */
 
-#planning, #benefits, #get-started {
-    background-color: var(--purple);
+#planning,
+#benefits,
+#get-started {
+  background-color: var(--purple);
+}
+    /* BIG CARD      */
+.card {
+  background-color: var(--bluecard);
+  margin: 0.7rem 2rem;
+  border-radius: 20px;
+  height: 100%;
+}
+.btn-card,
+h3,
+.prg-card {
+  margin: 1rem 2rem;
+}
+.big > h3 {
+  font-size: 22px;
+  color: var(--blueh3);
+  padding-top: 2rem;
+}
+.btn-card {
+  background-color: var(--blue);
+  border: 0px;
+  border-radius: 22px;
+  padding: 0.7rem 3rem;
+}
+.btn-card > a, .btn-card >  i {
+  color: var(--white);
+  text-decoration: none;
+  margin-left: 3px;
 }
 
-.card{
-    background-color: var(--bluecard);
-    margin: 0.7rem 1rem;
+.prg-card {
+  line-height: 25px;
+  text-align: left;
+  font-size: 18px;
+}
+.img-card > img {
+  width: 90%;
+  margin-left: 20px;
+}
+/* SMALL CARDS */
+
+.small > h3 {
+    color: var(--blueh3);
+}
+
+.file {
+    font-size: 60px;
+    padding-top: 20px;
+    color: #0084fd;
+    
+}
+
+.small > p {
+    margin: 0rem 1rem;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+
 }
