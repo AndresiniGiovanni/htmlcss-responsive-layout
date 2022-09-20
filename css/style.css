@@ -5,7 +5,7 @@
 }
 body {
   font-family: "PT Sans", sans-serif;
-  background-color: var(w);
+  background-color: var(--white);
 }
 :root {
   --lightblue: #0084fd;
@@ -48,8 +48,8 @@ footer {
 .align-center {
   align-items: center;
 }
-.flex-column{
-    flex-direction: column;
+.flex-column {
+  flex-direction: column;
 }
 .nav-menu {
   display: none;
@@ -62,12 +62,11 @@ footer {
 #get-started {
   background-color: var(--purple);
 }
-    /* BIG CARD      */
+/* BIG CARD      */
 .card {
   background-color: var(--bluecard);
   margin: 0.7rem 2rem;
   border-radius: 20px;
-  height: 100%;
 }
 .btn-card,
 h3,
@@ -85,7 +84,8 @@ h3,
   border-radius: 22px;
   padding: 0.7rem 3rem;
 }
-.btn-card > a, .btn-card >  i {
+.btn-card > a,
+.btn-card > i {
   color: var(--white);
   text-decoration: none;
   margin-left: 3px;
@@ -97,26 +97,84 @@ h3,
   font-size: 18px;
 }
 .img-card > img {
-  width: 90%;
+  max-width: 90%;
   margin-left: 20px;
+  display: block;
 }
 /* SMALL CARDS */
 
 .small > h3 {
-    color: var(--blueh3);
+  color: var(--blueh3);
 }
 
-.file {
-    font-size: 60px;
-    padding-top: 20px;
-    color: #0084fd;
-    
+.icons {
+  font-size: 60px;
+  padding-top: 20px;
+  color: #0084fd;
 }
 
 .small > p {
-    margin: 0rem 1rem;
-    padding-bottom: 20px;
-    text-align: center;
-    font-size: 16px;
+  margin: 0rem 1rem;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* PLANNING */
+
+.img-planning {
+  margin: 3rem 0.7rem;
+}
+.titol {
+  font-size: 22px;
+  color: var(--white);
+  display: block;
+  padding: 2rem 2rem;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+#prg-planning {
+  color: var(--white);
+  font-size: 15px;
+}
+
+.rounded-card {
+  background-color: var(--white);
+  border-radius: 40px;
+  margin-bottom: 50px;
+}
+
+.titol-in-card {
+  display: block;
+  text-align: center;
+  font-weight: 800;
+  font-size: 20px;
+  margin-top: 1rem ;
+}
+
+#italic-prg {
+  font-size: 16px;
+  display: block;
+  text-align: center;
+  line-height: 30px;
+  font-style: italic;
+  font-weight: 500;
+  padding: 1rem 2rem;
+}
+
+.arrow-btn {
+  margin: 0 auto;
+  border: 0px;
+  border-radius: 50%;
+  background-color: var(--purple);
+  margin-bottom: 30px;
+  margin-top: 20px;
 
 }
+
+.arrow-btn > a > i{
+  padding: 14px 16px;
+  font-size: 16px;
+}
+/* TESTIMONIALS */
