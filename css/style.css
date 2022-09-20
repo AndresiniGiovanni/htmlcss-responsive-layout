@@ -404,9 +404,9 @@ footer {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px), (max-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 992px;
   }
   
   #intro .cards {
@@ -423,5 +423,36 @@ footer {
     width: calc(66.66% - 1.5rem);
   }
     
-  
+  #benefits .cards {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  #benefits .card {
+    width: calc(33.33% - 70px);
+  }
+  .img-caption {
+    line-height: 25px;
+    font-size: 22px;
+  }
+  .img-4 {
+    margin-top: 30px;
+  }
+  .btn-linkedin {
+    padding: 5px;
+  }
+  #get-started .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .prg-centered {
+    max-width: 375px;
+  }
+  .white-btn {
+    max-width: 250px;
+  }
+  .footer {
+    max-width: 350px;
+    margin: 0 auto;
+  }
 }
