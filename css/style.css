@@ -15,6 +15,7 @@ body {
   --grey: #333333;
   --purple: #9792e4;
   --bluecard: #b5ddff;
+  --bluestarted: #d5d4f4;
 }
 .debug {
   border: 1px solid black;
@@ -142,7 +143,7 @@ h3,
 .rounded-card {
   background-color: var(--white);
   border-radius: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 
 .title-in-card {
@@ -177,7 +178,7 @@ h3,
   font-size: 16px;
 }
 /* TESTIMONIALS */
-#testimonials {
+.testimonials {
   text-align: center;
   margin-top: 30px;
   font-size: 13px
@@ -224,6 +225,12 @@ h3,
 .img-3 {
   background-image: url(../img/testimonial3.jpg);
 }
+.img-4{
+  background-image: url(../img/about.jpg);
+  width: 150px;
+  height: 150px;
+  margin-left: 25px;
+}
 .small-prg {
   color: var(--white);
   text-align: center;
@@ -240,4 +247,72 @@ h3,
   font-size: 18px;
   font-weight: 600;
   padding: 20px 0;
+}
+.white-title {
+  color: var(--white);
+  margin: 25px 30px;
+  font-size: 30px;
+}
+.number {
+ font-size: 28px;
+ padding-top: 25px;
+}
+
+.number, .scnd-title {
+  text-align: left;
+  margin-left: 30px;
+  color: var(--purple);
+  font-weight: bold;
+}
+
+.scnd-title {
+  font-size: 18px;  
+  padding-top: 15px;
+}
+.left-align {
+  line-height: 20px;
+  font-size: 14px;
+  
+}
+.purple-btn {
+  background-color: var(--purple);
+}
+
+.title-about {
+  font-size: 32px;
+  color:var(--purple);
+  font-weight: bold;
+  padding: 25px 20px;
+  margin-left: 10px;
+}
+
+.prg-about {
+  margin: 0 30px;
+  line-height: 35px;
+  padding-bottom: 25px;
+}
+
+.quote {
+  font-size: 52px;
+  color: var(--purple);
+  margin-left: 110px;
+}
+
+.img-caption {
+  color:var(--purple);
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 25px;
+  margin-right: 20px;
+  padding-top: 15px;
+}
+
+.btn-linkedin {
+  background-color: var(--purple);
+}
+
+.started {
+  font-size: 18px;
+  color: var(--bluestarted) ;
+  padding-top: 40px;
 }
