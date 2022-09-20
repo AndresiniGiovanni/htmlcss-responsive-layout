@@ -375,7 +375,14 @@ footer {
 #intro {
   padding: 0 2rem;
 }
+@media screen and (min-width: 375px) {
+  .nav-menu{
+    display: none;
+  }
+  
+}
 @media screen and (min-width: 768px) {
+
   .container {
     max-width: 750px;
   }
@@ -408,7 +415,36 @@ footer {
   .container {
     max-width: 992px;
   }
-  
+  /* HEADER  */
+  .nav-menu {
+    display: inline;
+  }
+  .hamburger {
+    display: none;
+  }
+  .nav-menu > ul {
+    list-style-type: none;
+    display: inline;
+  }
+  .nav-menu > ul li {
+    display: inline-block;
+    padding: 5px;
+  }
+  .nav-menu > ul > li > a {
+   color: white;
+   text-decoration: none;
+  }
+  .small-btn > a {
+    text-decoration: none;
+  }
+  .small-btn {
+    background-color: var(--white);
+    border: 0px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    display: inline;
+  }
+  /* CARDS  */
   #intro .cards {
     display: flex;
     flex-flow: row wrap;
@@ -422,7 +458,21 @@ footer {
   #intro .card:first-child {
     width: calc(66.66% - 1.5rem);
   }
-    
+  .img-card {
+    width: 50%;
+  }
+  .first-title, .prg-card{
+    width: 50%;
+  }
+  /* PLANNING  */
+  #planning .container { 
+    margin: 0 auto;
+  }
+  #planning .rounded-card {
+    width: 30%;
+    border-radius: 40px;
+  }
+  /* BENEFITS */
   #benefits .cards {
     display: flex;
     flex-flow: row wrap;
@@ -451,6 +501,7 @@ footer {
   .white-btn {
     max-width: 250px;
   }
+  /* FOOTER  */
   .footer {
     max-width: 350px;
     margin: 0 auto;
