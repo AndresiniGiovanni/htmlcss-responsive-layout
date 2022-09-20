@@ -393,6 +393,15 @@ footer {
   #intro .card:first-child {
     width: calc(66.66% - 1.5rem);
   }
+  #benefits .cards {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  #about-us .container {
+    display: flex;
+  
+  } 
+  
 }
 
 /* @media screen and (min-width: 992 ), (max-width: 1200px) {
