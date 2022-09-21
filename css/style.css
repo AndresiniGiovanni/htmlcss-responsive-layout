@@ -69,7 +69,7 @@ footer {
 /* BIG CARD      */
 .card {
   background-color: var(--bluecard);
-  margin: 0.7rem 2rem;
+  margin: 0.7rem 0rem;
   border-radius: 20px;
 }
 .btn-card,
@@ -376,13 +376,11 @@ footer {
   padding: 0 2rem;
 }
 @media screen and (min-width: 375px) {
-  .nav-menu{
+  .nav-menu {
     display: none;
   }
-  
 }
 @media screen and (min-width: 768px) {
-
   .container {
     max-width: 750px;
   }
@@ -391,13 +389,11 @@ footer {
     flex-flow: row wrap;
     margin-left: -0.75rem;
     margin-right: -0.75rem;
-
   }
   #intro .card {
     margin-left: 0.75rem;
     margin-right: 0.75rem;
     width: calc(33.33% - 1.5rem);
-
   }
   #intro .card:first-child {
     width: calc(66.66% - 1.5rem);
@@ -411,7 +407,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 992px), (max-width: 1200px) {
+@media screen and (min-width: 992px) {
   .container {
     max-width: 992px;
   }
@@ -431,8 +427,8 @@ footer {
     padding: 5px;
   }
   .nav-menu > ul > li > a {
-   color: white;
-   text-decoration: none;
+    color: white;
+    text-decoration: none;
   }
   .small-btn > a {
     text-decoration: none;
@@ -461,11 +457,12 @@ footer {
   .img-card {
     width: 50%;
   }
-  .first-title, .prg-card{
+  .first-title,
+  .prg-card {
     width: 50%;
   }
   /* PLANNING  */
-  #planning .container { 
+  #planning .container {
     margin: 0 auto;
   }
   #planning .rounded-card {
@@ -490,7 +487,7 @@ footer {
   .btn-linkedin {
     padding: 5px;
   }
-  #get-started .container{
+  #get-started .container {
     display: flex;
     flex-direction: column;
     align-items: center;
